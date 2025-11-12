@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "tailwindcss";
+body {
+    font-family: "Nunito Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+/* В ваш главный CSS файл (index.css, App.css, и т.д.) */
+body,
+#root {
+    overflow-x: hidden;
+}
+/* * {
+    border: 1px solid red;
+} */
