@@ -13,7 +13,7 @@ export default function BackgroundGradient({
 }) {
     return (
         <div
-            className={`absolute max-w-[90vw] max-h-[100vw] -z-10 rounded-full ${position} ${size} ${blur} ${
+            className={`absolute max-w-[90vw] max-h-[100vw] -z-100 rounded-full pointer-events-none ${position} ${size} ${blur} ${
                 animation ? Style.float_animation : Style.hoverAppear
             }`}
             style={{

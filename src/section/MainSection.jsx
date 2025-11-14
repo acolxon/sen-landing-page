@@ -29,7 +29,13 @@ export default function MainSection({ forModal }) {
                         onClick={() => {
                             forModal(true);
                         }}
-                        className="max-w-60 w-full max-h-15 h-[60px] flex gap-5 items-center justify-center bg-[#ECB241] rounded-sm text-xl text-white font-bold cursor-pointer"
+                        className="
+        max-w-60 w-full max-h-15 h-[60px]
+        flex gap-5 items-center justify-center
+        bg-[#ECB241] rounded-sm text-xl text-white font-bold
+        cursor-pointer
+        active:scale-95 transition-all duration-150
+    "
                     >
                         Оставьте заявку
                         <ArrowUpRight />

@@ -16,6 +16,9 @@ export default function PhoneInput({ name, value, onChange }) {
             placeholder="+7(___)___-__-__"
             className="bg-white rounded-[20px] px-3 py-4 w-full focus:outline-none focus:ring-0 z-500"
             required
+            type="tel"
+            inputMode="numeric"
+            pattern="[0-9]*"
         />
     );
 }
