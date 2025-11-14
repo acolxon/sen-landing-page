@@ -122,7 +122,7 @@ export default function Modal({ isOpen, onClose }) {
                                 className={`font-bold text-xl text-[#1b1a1b] max-w-50 w-full h-10 rounded-[20px] z-500 ${
                                     isPhoneValid
                                         ? "bg-white cursor-pointer"
-                                        : "bg-gray-300 cursor-not-allowed"
+                                        : "bg-gray-500 cursor-not-allowed"
                                 }`}
                                 disabled={!isPhoneValid}
                             >

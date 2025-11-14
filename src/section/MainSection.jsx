@@ -6,8 +6,7 @@ import { ArrowUpRight } from "lucide-react";
 import Modal from "../components/Modal.jsx";
 import { useState } from "react";
 
-export default function MainSection() {
-    const [open, setOpen] = useState(false);
+export default function MainSection({ forModal }) {
     return (
         <section
             id="home"
@@ -28,7 +27,7 @@ export default function MainSection() {
                     </p>
                     <button
                         onClick={() => {
-                            setOpen(true);
+                            forModal(true);
                         }}
                         className="max-w-60 w-full max-h-15 h-[60px] flex gap-5 items-center justify-center bg-[#ECB241] rounded-sm text-xl text-white font-bold cursor-pointer"
                     >
@@ -74,7 +73,6 @@ export default function MainSection() {
                 blur="blur-[100px]"
                 opacity="opacity-50"
             />
-            <Modal isOpen={open} onClose={() => setOpen(false)} />;
         </section>
     );
 }
